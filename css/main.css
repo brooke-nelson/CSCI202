@@ -1,0 +1,56 @@
+/* Style rule- selector and declaration*/
+/* selector- element, id(#), class(.), multiple selectors */
+
+/* declaration- {property name: value;} */
+
+/* variables-roots */
+
+:root{
+    --main-color: #05a081;
+    --primary-color:#00795f;
+    --font-family: 'Dosis';
+    
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+@import '../css/footer.css';
+@import '../css/header.css';
+
+
+
+
+body{
+    background-color:grey;
+    font-family: var(--font-family);
+}
+
+p{
+    color: pink;
+    /* font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+    font-variant: small-caps;
+    line-height: 16px;*/
+    /* font: italic small-caps bold 18px/16px 'Dosis', sans-serif;  */
+    font: 18px/16px 'Dosis', sans-serif;
+
+    /* font shorthand */
+    /* font: font-style font-variant font-weight font-size/line-height, font-family */
+}
+
+h1{
+    font-family: 'Dosis', sans-serif;
+    color: var(--main-color);
+    
+}
+/* important rule will override*/
+h2{
+    color: blue !important;
+    background-color: var(--primary-color);
+}
+
+.container{
+    width: 60% !important;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3 | Forms &amp; Multimedia</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <!-- Container (similar to a wrapper) container-fluid(sets container to 100%)-->
+    <div class="container">
+        <h3 class="text-center">Form</h3>
+
+
+
+        <!-- form MEHTOD- POST/GET, action-php-->
+        <form method="POST" action="account.php" id="form"      class="form">
+            
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" class="form-control" name="fname" id="fname" placeholder="Enter Your Name" size="50" required>
+                </div>
+
+                <div class="col">
+
+                    <input type="text" class="form-control" name="lname" id="lname" placeholder="Enter your Last Name" size="50" >
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="col">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" size="50">
+                </div>
+                <div class="col">
+                    <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password" size="50">
+                </div>    
+        </div>
+        <br>
+            <textarea name="" class="form-control" id="" cols="52" rows="10"></textarea>
+
+            <br><br>
+            <input type="submit" class="btn btn-success" value="Submit">
+
+            <!-- contextual colors- primary, success, info secondary muted -->
+        </form>
+
+        <!-- Audio -->
+        <h3>Audio</h3>
+        <audio controls autoplay muted loop >
+            <source type="audio/mp3" src="media/audio.mp3"> 
+        </audio>
+
+        <h3>Video</h3>
+        <video controls width="400" loop autoplay poster="images/wester.jpg" muted>
+            <source type="video/mp4" src="media/video.mp4">
+        </video>
+
+        <header>
+            <div class="container">
+                <h1>Header</h1>
+            </div>
+        </header>
+        <div class="menu">
+            <div class="container">
+                <nav>
+
+                </nav>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="container">
+                <h1>Bellingham High School</h1>
+            </div>
+        </div>
+        
+
+    </div>
+</body>
+</html>
